@@ -138,7 +138,7 @@ src/
 │   └── stripe.ts          # Stripe client
 ├── middleware/
 │   ├── auth.ts            # JWT auth + role authorization
-│   ├── global-error.ts   # Global error handler
+│   ├── global-error.ts    # Global error handler
 │   ├── not-found.ts       # 404 handler
 │   └── validate.ts        # Zod validation wrapper
 ├── modules/
@@ -371,7 +371,7 @@ MOVE_IN_REJECTED                                  MOVE_OUT_REJECTED
    - Request → `MOVED_IN`
    - Property → `RENTED`
 6. **Move-out**: Landlord approves → `MOVE_OUT_APPROVED`
-7. Tenant pays `MOVE_OUT_REFUND` → webhook:
+7. Landlord pays `MOVE_OUT_REFUND` → webhook:
    - Payment → `REFUNDED`
    - Request → `MOVED_OUT`
    - Property → `AVAILABLE`
@@ -428,7 +428,7 @@ curl -H "Authorization: Bearer YOUR_CRON_SECRET" \
 
 ## API Documentation
 
-See **[POSTMAN_GUIDE.md](./POSTMAN_GUIDE.md)** for:
+See **[POSTMAN_GUIDE.md](./postman/POSTMAN_GUIDE.md)** for:
 - Importing the Postman collection (`ph-se-026.postman_collection.json`)
 - Setting up environments
 - Authentication flow
