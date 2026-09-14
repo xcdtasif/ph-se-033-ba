@@ -1,10 +1,11 @@
-node_modules
-/src/generated/prisma
-.env
 _inbox
-dist
 .vercel
-_context
+dist
+node_modules
+
+.env
+AGENTS.md
 PLAN.md
+
 *.log
 *.txt
